@@ -1,5 +1,4 @@
 # ADASTRA
-#### Video Demo:  <https://youtu.be/qrFocVVlXXY>
 #### Description:
 This project features a quiz centered around the fascinating world of astronomy, offering users the ability to register an account. Developed using the Flask framework as the foundation for the web application, this project reflects my passion for astronomy, particularly planets and their moons. I've meticulously integrated routes, forms, and models into the main app, creating a seamless experience for users.
 
