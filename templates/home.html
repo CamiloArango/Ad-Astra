@@ -1,0 +1,18 @@
+{% extends 'base.html' %} 
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron center1">
+    <h1 class="display-4">Hello, World!</h1>
+    <p class="lead">On this page you can see what's your level of knowledge about astronomy by answering a few simple questions</p>
+    <hr class="my-4">
+    <p>So now If you want to know it, click here:</p>
+    {% if current_user.is_authenticated %}
+    <a class="btn btn-dark btn-lg" href="{{ url_for('quiz_page')}}" role="button">Questions</a>
+    {% else %}
+    <a class="btn btn-dark btn-lg" href="{{ url_for('login_page')}}" role="button">Questions</a>
+    {% endif %}
+  </div>
+{% endblock %}
